@@ -40,6 +40,7 @@ public partial class Registro : ContentPage
             if (dMontoIngreso < 0 || dMontoIngreso == 0 || dMontoIngreso > 300)
             {
                 DisplayAlert("Advertencia", "El monto incial no puede tener valores negativo o sobre pasar los $300.00 o valor $ 0.00", "Ok");
+                return;
             }
 
 
