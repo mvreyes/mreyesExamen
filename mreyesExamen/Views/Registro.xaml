@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mreyesExamen.Views.Registro">
+    <VerticalStackLayout
+        Spacing="20"
+        Margin="25">
+        <Label x:Name="lblUserConn"
+               FontSize="15"
+               TextColor="Green"
+               HorizontalOptions="Center">      
+        </Label>
+        <Label 
+            Text="Registro"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="22"
+            TextColor="Blue"/>
+        <Grid ColumnSpacing="10"
+              RowSpacing ="10">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblNombre"
+                   Text="Nombre"
+                   FontSize="15"
+                   Grid.Row="0"
+                   Grid.Column="0">
+            </Label>
+            <Entry x:Name="txtNombre"
+                   Placeholder="Ingrese Nombre"
+                   FontSize="15"
+                   Grid.Row="1"
+                   Grid.Column="0">
+            </Entry>
+            <Label x:Name="lblApellido"
+                   Text="Apellido"
+                   FontSize="15"
+                   Grid.Row="0"
+                   Grid.Column="1">
+            </Label>
+            <Entry x:Name="txtApellido"
+                   Placeholder="Ingrese Apellido"
+                   FontSize="15"
+                   Grid.Row="1"
+                   Grid.Column="1">
+            </Entry>
+            <Label x:Name="lblVoltaje"
+                   Text="Voltiamperios VA"
+                   FontSize="15"
+                   Grid.Row="0"
+                   Grid.Column="2">
+            </Label>
+            <Picker x:Name="pkVoltaje"
+                    Grid.Row="1"
+                    Grid.Column="2">
+                <Picker.Items>
+                    <x:String>500</x:String>
+                    <x:String>750</x:String>
+                    <x:String>1000</x:String>
+                </Picker.Items>
+            </Picker>
+        </Grid>
+        <Grid ColumnSpacing="10"
+              RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblFecha"
+                   Text="Fecha:"
+                   FontSize="15"
+                   Grid.Row="0"
+                   Grid.Column="0">
+            </Label>
+            <DatePicker x:Name="dtFechas"
+                        Date="01/01/2024"
+                        Format="MM/dd/yyyy"
+                        Grid.Row="0"
+                        Grid.Column="1">
+            </DatePicker>
+            <Label x:Name="lblCiudad"
+                   Text="Ciudad:"
+                   FontSize="15"
+                   Grid.Row="1"
+                   Grid.Column="0">
+            </Label>
+            <Picker x:Name="pkCiudades"
+                    Grid.Row="1"
+                    Grid.Column="1">
+                <Picker.Items>
+                    <x:String>QUITO</x:String>
+                    <x:String>LATACUNGA</x:String>
+                    <x:String>SANTO DOMINGO</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label x:Name="lblMontoInicial"
+                   Text="Monto inicial:"
+                   FontSize="15"
+                   Grid.Row="2"
+                   Grid.Column="0">
+            </Label>
+            <Entry x:Name="txtMontoInicial"
+                   Placeholder="Ingrese monto"
+                   FontSize="15"
+                   Keyboard="Numeric"
+                   Grid.Row="2"
+                   Grid.Column="1">
+            </Entry>
+        </Grid>
+        <Button x:Name="btnResumen"
+                Text="Ver resumen"
+                Clicked="btnResumen_Clicked">
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>
