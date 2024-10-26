@@ -56,8 +56,6 @@ public partial class Login : ContentPage
             {
                 Navigation.PushAsync(new Views.Registro(usuarioIngresado));
             }
-
-
         }
         catch (Exception ex)
 		{
@@ -67,6 +65,6 @@ public partial class Login : ContentPage
 
     private void btnAcercaDe_Clicked(object sender, EventArgs e)
     {
-        DisplayAlert("Informacion", "Esta aplicacion fue creada por: Marco Reyes ", "Ok");
+        DisplayAlert("Información", "La aplicacion fue creada por: Marco Reyes.", "Ok");
     }
 }

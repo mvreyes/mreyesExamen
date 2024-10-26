@@ -11,8 +11,126 @@
                HorizontalOptions="Center">
         </Label>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="RESUMEN"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Grid ColumnSpacing="10"
+              RowSpacing ="10">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblNombre"
+                   Text="Nombre"
+                   FontSize="15"
+                   Grid.Row="0"
+                   Grid.Column="0">
+            </Label>
+            <Entry x:Name="txtNombre"
+                   IsEnabled="false"
+                   FontSize ="15"
+                   Grid.Row="0"
+                   Grid.Column="1">
+            </Entry>
+            <Label x:Name="lblApellido"
+                   Text="Apellido"
+                   FontSize="15"
+                   Grid.Row="1"
+                   Grid.Column="0">
+            </Label>
+            <Entry x:Name="txtApellido"
+                   IsEnabled="false"
+                   FontSize ="15"
+                   Grid.Row="1"
+                   Grid.Column="1">
+            </Entry>
+            <Label x:Name="lblVoltaje"
+                   Text="Voltiamperio VA"
+                   FontSize="15"
+                   Grid.Row="3"
+                   Grid.Column="0">
+            </Label>
+            <Entry x:Name="txtVoltaje"
+                   IsEnabled="false"
+                   FontSize ="15"
+                   Grid.Row="3"
+                   Grid.Column="1">
+            </Entry>
+            <Label x:Name="lblFecha"
+                   Text="Fecha"
+                   FontSize="15"
+                   Grid.Row="4"
+                   Grid.Column="0">
+            </Label>
+            <Entry x:Name="txtFecha"
+                   IsEnabled="false"
+                   FontSize ="15"
+                   Grid.Row="4"
+                   Grid.Column="1">
+            </Entry>
+            <Label x:Name="lblCiudad"
+                   Text="Ciudad"
+                   FontSize="15"
+                   Grid.Row="5"
+                   Grid.Column="0">
+            </Label>
+            <Entry x:Name="txtCiudad"
+                   IsEnabled="false"
+                   FontSize ="15"
+                   Grid.Row="5"
+                   Grid.Column="1">
+            </Entry>
+            <Label x:Name="lblMontoInicial"
+                   Text="Monto inicial"
+                   FontSize="15"
+                   Grid.Row="6"
+                   Grid.Column="0">
+            </Label>
+            <Entry x:Name="txtMontoInicial"
+                   IsEnabled="false"
+                   FontSize ="15"
+                   Grid.Row="6"
+                   Grid.Column="1">
+            </Entry>
+            <Label x:Name="lblCoutaMensual"
+                   Text="Cuota mensual"
+                   FontSize="15"
+                   Grid.Row="7"
+                   Grid.Column="0">
+            </Label>
+            <Entry x:Name="txtCoutaMensual"
+                   IsEnabled="false"
+                   FontSize ="15"
+                   Grid.Row="7"
+                   Grid.Column="1">
+            </Entry>
+            <Label x:Name="lblPagoTotal"
+                   Text="Pago total"
+                   FontSize="15"
+                   Grid.Row="8"
+                   Grid.Column="0">
+            </Label>
+            <Entry x:Name="txtPagoTotal"
+                   IsEnabled="false"
+                   FontSize ="15"
+                   Grid.Row="8"
+                   Grid.Column="1">
+            </Entry>
+        </Grid>
+        <Button x:Name="btnCerrarSesion"
+                Text="Cerrar sesión"
+                Clicked="btnCerrarSesion_Clicked">
+        </Button>
     </VerticalStackLayout>
 </ContentPage>
